@@ -1,4 +1,4 @@
-FROM gradle:8.0-jdk17
+FROM gradle:latest-jdk20
 
 WORKDIR /.
 
