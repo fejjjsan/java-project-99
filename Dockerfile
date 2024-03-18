@@ -1,8 +1,8 @@
 FROM gradle:8.0-jdk17
 
-WORKDIR /java-project-99
+WORKDIR /.
 
-COPY /java-project-99 .
+COPY /.
 
 RUN gradle clean installDist
 
