@@ -2,7 +2,7 @@ FROM gradle:8.0-jdk17
 
 WORKDIR /.
 
-COPY /.
+COPY . .
 
 RUN gradle clean installDist
 
