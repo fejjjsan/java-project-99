@@ -4,6 +4,6 @@ WORKDIR /.
 
 COPY . .
 
-RUN gradle clean installDist
+RUN gradle clean installBootDist
 
-CMD gradle run
+CMD gradle bootRun
