@@ -6,4 +6,4 @@ COPY . .
 
 RUN gradle clean installBootDist
 
-CMD gradle bootRun
+CMD SPRING_PROFILES_ACTIVE=production gradle bootRun
