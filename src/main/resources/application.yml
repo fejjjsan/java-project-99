@@ -2,7 +2,6 @@ spring:
   jpa:
     show-sql: true
     hibernate:
-      ddl-auto: update
-    database-platform: org.hibernate.dialect.MySQLDialect
+      ddl-auto: none
   profiles:
     default: development
