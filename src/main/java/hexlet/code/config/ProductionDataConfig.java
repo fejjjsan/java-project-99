@@ -15,7 +15,7 @@ public class ProductionDataConfig {
         System.out.println("***** POSTGRESQL DB *****");
         final DataSourceBuilder<?> dataSourceBuilder = DataSourceBuilder.create()
                 .driverClassName("org.postgresql.Driver")
-                .url("jdbc:postgresql://@dpg-cmv7cdn109ks73b9ga60-a:5432/projectdb_f9w1")
+                .url("jdbc:postgresql://@dpg-cmv7cdn109ks73b9ga60-a:5432/projectdb_f9w1?user=fejjsan&password=H5ZITOBQ4oo5yeupMCIkNsBUxHVZt63u")
                 .username("fejjsan")
                 .password("H5ZITOBQ4oo5yeupMCIkNsBUxHVZt63u");
         return dataSourceBuilder.build();
