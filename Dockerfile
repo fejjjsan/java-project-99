@@ -4,4 +4,4 @@ COPY . .
 
 RUN gradle clean build
 
-ENTRYPOINT ["java","-jar","-Dspring.profiles.active=production","java-project-99-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java","-jar","-Dspring.profiles.active=production","build/libs/java-project-99-0.0.1-SNAPSHOT.jar"]
