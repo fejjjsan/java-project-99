@@ -22,9 +22,10 @@ public class AppApplication {
 		SpringApplication.run(AppApplication.class, args);
 	}
 
-	@Bean
+//	@Bean
 	public CommandLineRunner demo(UserRepository repository) {
 		return (args) -> {
+			repository.deleteAll();
 			// save a few customers
 			repository.save(new User("Jack", "Bauer","maile@inbox.ru", "12323213123"));
 			repository.save(new User("Chloe", "O'Brian", "mailoo@inbox.ru", "12323213123"));
