@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://dpg-cmv7cdn109ks73b9ga60-a:5432/projectdb_f9w1
+    url: jdbc:postgresql://dpg-cmv7cdn109ks73b9ga60-a/projectdb_f9w1
     username: fejjsan
     password: H5ZITOBQ4oo5yeupMCIkNsBUxHVZt63u
   config:
