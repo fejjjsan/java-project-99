@@ -1,9 +1,7 @@
 FROM gradle:8.6-jdk17
 
-WORKDIR /.
-
 COPY . .
 
-RUN gradle clean installBootDist
+RUN gradle clean build
 
-CMD SPRING_PROFILES_ACTIVE=production gradle bootRun
+ENTRYPOINT ["java","-jar","-Dspring.profiles.active=production","java-project-99-0.0.1-SNAPSHOT.jar"]
