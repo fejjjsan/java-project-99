@@ -1,11 +1,8 @@
 spring:
-  jpa:
-    show-sql: true
-    hibernate:
-      ddl-auto: none
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    url: jdbc:postgresql://dpg-cmv7cdn109ks73b9ga60-a.oregon-postgres.render.com/projectdb_f9w1
+    username: fejjsan
+    password: H5ZITOBQ4oo5yeupMCIkNsBUxHVZt63u
   config:
     active:
       on-profile: production
