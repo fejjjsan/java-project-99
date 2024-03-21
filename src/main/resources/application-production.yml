@@ -1,7 +1,3 @@
-server:
-  port: 8080
-  address: 0.0.0.0
-
 spring:
   datasource:
     url: jdbc:postgresql://dpg-cmv7cdn109ks73b9ga60-a/projectdb_f9w1
