@@ -19,7 +19,6 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 
@@ -27,11 +26,26 @@ dependencies {
 	implementation 'com.h2database:h2:2.2.224'
 	implementation 'org.postgresql:postgresql'
 
+
 	compileOnly 'org.projectlombok:lombok:1.18.32'
 	annotationProcessor 'org.projectlombok:lombok:1.18.32'
 
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'org.instancio:instancio-junit:4.4.0'
+	testImplementation 'org.assertj:assertj-core:3.25.1'
+	testImplementation 'junit:junit:4.13.1'
+
+	implementation 'jakarta.validation:jakarta.validation-api:3.1.0-M1'
+	implementation 'net.datafaker:datafaker:2.1.0'
+	implementation 'org.openapitools:jackson-databind-nullable:0.2.6'
+	implementation 'org.mapstruct:mapstruct:1.5.5.Final'
+	annotationProcessor 'org.mapstruct:mapstruct-processor:1.5.5.Final'
 }
 
 tasks.named('test') {
+	useJUnitPlatform()
+}
+
+test {
 	useJUnitPlatform()
 }
