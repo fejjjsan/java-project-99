@@ -13,4 +13,5 @@
     <suppress checks="FinalParameters" />
     <suppress checks="LineLength" />
     <suppress checks="FileTabCharacter" />
+    <suppress checks="DesignForExtension" />
 </suppressions>
